@@ -9,72 +9,74 @@ export function Hero() {
   }
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center px-6 py-20">
-      {/* Subtle dot grid pattern */}
+    <section className="relative min-h-[100svh] flex items-center justify-center px-4 sm:px-6 py-16 sm:py-20 overflow-hidden">
+      {/* Background grid */}
       <div className="absolute inset-0 bg-[radial-gradient(rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:32px_32px]" />
-      
-      {/* Very subtle gradient overlay */}
+
+      {/* Gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-secondary/10" />
-      
+
       <div className="relative z-10 max-w-4xl mx-auto text-center">
-        <div className="space-y-8">
+        <div className="space-y-6 sm:space-y-8">
           {/* Name */}
-          <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-semibold tracking-tight text-balance animate-in fade-in slide-in-from-bottom-4 duration-700">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-semibold tracking-tight text-balance">
             Rafiou Diallo
           </h1>
-          
+
           {/* Title */}
-          <div className="space-y-3 animate-in fade-in slide-in-from-bottom-4 duration-700 delay-100">
-            <p className="text-2xl sm:text-3xl md:text-4xl font-medium text-primary">
-              Machine Learning & Cybersecurity 
+          <div className="space-y-2">
+            <p className="text-xl sm:text-2xl md:text-3xl font-medium text-primary">
+              Machine Learning & Cybersecurity
             </p>
-            <p className="text-base sm:text-lg text-muted-foreground font-mono tracking-wide">
+            <p className="text-sm sm:text-base text-muted-foreground font-mono tracking-wide">
               Applied AI · CyberSecurity · Interpretable ML
             </p>
           </div>
-          
+
           {/* Tagline */}
-          <p className="max-w-2xl mx-auto text-muted-foreground text-lg sm:text-xl leading-relaxed text-pretty animate-in fade-in slide-in-from-bottom-4 duration-700 delay-200">
-            Machine Learning & Cybersecurity Enthusiaste specializing in Applied AI, Security, and Interpretable ML. I build intelligent systems at the intersection of machine learning, cybersecurity, 
-            and real-world deployment with a focus on robustness, interpretability, and scale.
+          <p className="max-w-2xl mx-auto text-muted-foreground text-base sm:text-lg leading-relaxed text-pretty">
+            Machine Learning & Cybersecurity Enthusiast specializing in Applied AI, Security, and
+            Interpretable ML. I build intelligent systems at the intersection of machine learning,
+            cybersecurity, and real-world deployment with a focus on robustness, interpretability,
+            and scale.
           </p>
-          
-          {/* CTA Buttons */}
-          <div className="flex flex-wrap items-center justify-center gap-4 pt-4 animate-in fade-in slide-in-from-bottom-4 duration-700 delay-300">
-            <Button 
-              size="lg" 
+
+          {/* Buttons */}
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 pt-4">
+            <Button
+              size="lg"
               onClick={scrollToProjects}
-              className="group bg-primary text-primary-foreground hover:bg-primary/90 transition-all duration-300 hover:shadow-md hover:shadow-primary/20"
+              className="group bg-primary text-primary-foreground hover:bg-primary/90 transition-all"
             >
               View Projects
-              <ArrowDown className="ml-2 h-4 w-4 transition-transform group-hover:translate-y-0.5" />
+              <ArrowDown className="ml-2 h-4 w-4 group-hover:translate-y-0.5 transition-transform" />
             </Button>
-            
-            <Button 
-              variant="outline" 
-              size="lg" 
+
+            <Button
+              variant="outline"
+              size="lg"
               asChild
-              className="border-border hover:border-primary/40 hover:bg-primary/5 transition-all duration-300 bg-transparent"
+              className="bg-transparent border-border hover:border-primary/40 hover:bg-primary/5"
             >
-              <a 
-                href="https://github.com/D-Rafiou" 
-                target="_blank" 
+              <a
+                href="https://github.com/D-Rafiou"
+                target="_blank"
                 rel="noopener noreferrer"
               >
                 <Github className="mr-2 h-4 w-4" />
                 GitHub
               </a>
             </Button>
-            
-            <Button 
-              variant="outline" 
-              size="lg" 
+
+            <Button
+              variant="outline"
+              size="lg"
               asChild
-              className="border-border hover:border-primary/40 hover:bg-primary/5 transition-all duration-300 bg-transparent"
+              className="bg-transparent border-border hover:border-primary/40 hover:bg-primary/5"
             >
-              <a 
-                href="https://www.linkedin.com/in/rafiou-diallo-004522260/" 
-                target="_blank" 
+              <a
+                href="https://www.linkedin.com/in/rafiou-diallo-004522260/"
+                target="_blank"
                 rel="noopener noreferrer"
               >
                 <Linkedin className="mr-2 h-4 w-4" />
@@ -83,9 +85,9 @@ export function Hero() {
             </Button>
           </div>
         </div>
-        
-        {/* Scroll indicator */}
-        <div className="absolute bottom-12 left-1/2 -translate-x-1/2">
+
+        {/* Scroll indicator (hidden on mobile) */}
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 hidden sm:block">
           <div className="flex flex-col items-center gap-2 text-muted-foreground/50">
             <span className="text-xs font-mono tracking-widest uppercase">Scroll</span>
             <ArrowDown className="h-4 w-4 animate-bounce" />
