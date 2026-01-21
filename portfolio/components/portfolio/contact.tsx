@@ -22,7 +22,7 @@ export function Contact() {
               asChild
               className="border-border hover:border-primary/40 hover:bg-primary/5 transition-all duration-300 bg-transparent"
             >
-              <a href="mailto:rafiou@example.com">
+              <a href="mailto:rafioudiallo@cunet.carleton.ca">
                 <Mail className="mr-2 h-4 w-4" />
                 Email
               </a>
