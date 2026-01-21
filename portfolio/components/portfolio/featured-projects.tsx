@@ -83,7 +83,7 @@ export function FeaturedProjects() {
   return (
     <section id="projects" className="py-28 px-6">
       <div className="max-w-6xl mx-auto">
-        <div className="space-y-3 mb-20">
+        <div className="space-y-3 mb-20 text-center flex flex-col items-center">
           <h2 className="text-4xl sm:text-5xl font-semibold tracking-tight">
             Featured Projects
           </h2>
