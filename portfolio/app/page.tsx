@@ -10,13 +10,15 @@ import { Footer } from "@/components/portfolio/footer"
 export default function Portfolio() {
   return (
     <main className="min-h-screen bg-background text-foreground">
-      <Hero />
-      <FeaturedProjects />
-      <OtherProjects />
-      <Experience />
-      <Skills />
-      <Education />
-      <Contact />
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <Hero />
+        <FeaturedProjects />
+        <OtherProjects />
+        <Experience />
+        <Skills />
+        <Education />
+        <Contact />
+      </div>
       <Footer />
     </main>
   )
