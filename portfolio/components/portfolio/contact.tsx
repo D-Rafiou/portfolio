@@ -11,7 +11,6 @@ export function Contact() {
               {"Let's Connect"}
             </h2>
             <p className="text-muted-foreground text-lg">
-              Open to opportunities in ML, cybersecurity, and applied AI systems.
             </p>
           </div>
           
