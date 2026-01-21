@@ -23,7 +23,8 @@ interface Project {
 const featuredProjects: Project[] = [
   {
     title: "NIST Cybersecurity Q&A System (RAG)",
-    impact: "Retrieval-Augmented Generation system delivering grounded cybersecurity guidance from official NIST publications.",
+    impact:
+      "Retrieval-Augmented Generation system delivering grounded cybersecurity guidance from official NIST publications.",
     bullets: [
       "Built end-to-end RAG pipeline using Mistral-7B-Instruct, LangChain, and FAISS",
       "Implemented 4-bit quantization for memory-efficient inference (~4GB VRAM)",
@@ -37,7 +38,8 @@ const featuredProjects: Project[] = [
   },
   {
     title: "Malware Image Classification using CNNs",
-    impact: "Interpretable deep learning system for malware family classification from raw binaries.",
+    impact:
+      "Interpretable deep learning system for malware family classification from raw binaries.",
     bullets: [
       "Converted malware binaries into 128x128 RGB images",
       "Designed custom CNNs and fine-tuned ResNet50, achieving 98.4% test accuracy",
@@ -51,7 +53,8 @@ const featuredProjects: Project[] = [
   },
   {
     title: "ML Network Intrusion Detection (CICIDS2017)",
-    impact: "Production-scale ML system detecting real-world network attacks across millions of flows.",
+    impact:
+      "Production-scale ML system detecting real-world network attacks across millions of flows.",
     bullets: [
       "Processed 2.2M+ network flows across 10 attack categories",
       "Achieved 98% macro-F1, 99% recall on Bot attacks",
@@ -65,7 +68,8 @@ const featuredProjects: Project[] = [
   },
   {
     title: "Semi-Supervised Anomaly Detection in System Logs",
-    impact: "Sequence-based anomaly detection system for large-scale distributed logs.",
+    impact:
+      "Sequence-based anomaly detection system for large-scale distributed logs.",
     bullets: [
       "Built LSTM next-event prediction model using PyTorch",
       "Learned normal execution patterns from unlabeled data",
@@ -81,74 +85,82 @@ const featuredProjects: Project[] = [
 
 export function FeaturedProjects() {
   return (
-    <section id="projects" className="py-28 px-6">
+    <section id="projects" className="py-20 sm:py-28 px-4 sm:px-6">
       <div className="max-w-6xl mx-auto">
-        <div className="space-y-3 mb-20 text-center flex flex-col items-center">
-          <h2 className="text-4xl sm:text-5xl font-semibold tracking-tight">
+        {/* Section header */}
+        <div className="space-y-3 mb-14 sm:mb-20 text-center">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold tracking-tight">
             Featured Projects
           </h2>
-          <p className="text-muted-foreground text-lg max-w-2xl">
-            Production-grade ML and security systems built with a focus on interpretability, 
-            robustness, and real-world deployment.
+          <p className="text-muted-foreground text-base sm:text-lg max-w-2xl mx-auto">
+            Production-grade ML and security systems built with a focus on
+            interpretability, robustness, and real-world deployment.
           </p>
         </div>
-        
-        <div className="grid gap-8 md:grid-cols-2">
+
+        {/* Project grid */}
+        <div className="grid gap-6 sm:gap-8 md:grid-cols-2">
           {featuredProjects.map((project, index) => (
-            <article 
+            <article
               key={index}
-              className="group relative rounded-xl border border-border bg-card/40 p-6 transition-all duration-500 ease-out hover:border-primary/30 hover:bg-card/60 hover:-translate-y-1 hover:shadow-lg hover:shadow-primary/5"
+              className="relative rounded-xl border border-border bg-card/40 p-5 sm:p-6 transition-all hover:border-primary/30 hover:bg-card/60"
             >
-              {/* Subtle gradient border glow on hover */}
-              <div className="absolute -inset-px rounded-xl bg-gradient-to-br from-primary/10 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10" />
-              
               <div className="space-y-5">
-                <h3 className="text-xl font-semibold tracking-tight text-foreground">
+                <h3 className="text-lg sm:text-xl font-semibold tracking-tight">
                   {project.title}
                 </h3>
-                
+
                 <p className="text-sm text-muted-foreground leading-relaxed">
                   {project.impact}
                 </p>
-                
-                {/* Project Visual */}
-                <div className="overflow-hidden rounded-lg transition-transform duration-300 group-hover:scale-[1.02]">
-                  {project.visual}
+
+                {/* Visual */}
+                <div className="w-full overflow-hidden rounded-lg">
+                  <div className="w-full max-w-full">
+                    {project.visual}
+                  </div>
                 </div>
-                
+
+                {/* Bullets */}
                 <ul className="space-y-2">
-                  {project.bullets.map((bullet, bulletIndex) => (
-                    <li 
-                      key={bulletIndex}
-                      className="flex items-start gap-3 text-sm text-foreground/75"
+                  {project.bullets.map((bullet, i) => (
+                    <li
+                      key={i}
+                      className="flex items-start gap-3 text-sm text-foreground/80"
                     >
                       <span className="mt-2 h-1 w-1 rounded-full bg-primary/60 shrink-0" />
                       {bullet}
                     </li>
                   ))}
                 </ul>
-                
-                <div className="flex flex-wrap gap-2 pt-2">
+
+                {/* Tech */}
+                <div className="flex flex-wrap gap-2 pt-1">
                   {project.tech.map((tech) => (
-                    <Badge 
-                      key={tech} 
+                    <Badge
+                      key={tech}
                       variant="secondary"
-                      className="text-xs font-mono bg-secondary/60 text-secondary-foreground/80 border-0"
+                      className="text-xs font-mono bg-secondary/60 border-0"
                     >
                       {tech}
                     </Badge>
                   ))}
                 </div>
-                
-                <Button 
-                  variant="ghost" 
-                  size="sm" 
-                  className="group/btn -ml-2 text-muted-foreground hover:text-primary hover:bg-primary/5 transition-colors"
+
+                {/* GitHub */}
+                <Button
+                  variant="ghost"
+                  size="sm"
+                  className="-ml-2 text-muted-foreground hover:text-primary"
                   asChild
                 >
-                  <a href={project.github} target="_blank" rel="noopener noreferrer">
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     View on GitHub
-                    <ExternalLink className="ml-2 h-3 w-3 transition-transform group-hover/btn:translate-x-0.5" />
+                    <ExternalLink className="ml-2 h-3 w-3" />
                   </a>
                 </Button>
               </div>
