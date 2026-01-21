@@ -35,8 +35,8 @@ export function Hero() {
           
           {/* Tagline */}
           <p className="max-w-2xl mx-auto text-muted-foreground text-lg sm:text-xl leading-relaxed text-pretty animate-in fade-in slide-in-from-bottom-4 duration-700 delay-200">
-            I build intelligent systems at the intersection of machine learning, cybersecurity, 
-            and real-world deployment — focusing on robustness, interpretability, and scale.
+            Machine Learning & Cybersecurity Enthusiaste specializing in Applied AI, Security, and Interpretable ML. I build intelligent systems at the intersection of machine learning, cybersecurity, 
+            and real-world deployment with a focus on robustness, interpretability, and scale.
           </p>
           
           {/* CTA Buttons */}
