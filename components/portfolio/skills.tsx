@@ -78,9 +78,6 @@ export function Skills() {
           <h2 className="text-4xl sm:text-5xl font-semibold tracking-tight">
             Skills & Tooling
           </h2>
-          <p className="text-muted-foreground text-lg max-w-2xl">
-            Security consulting capabilities grounded in practical testing, clear communication, and actionable remediation.
-          </p>
         </div>
         
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">

@@ -85,10 +85,6 @@ export function Experience() {
           <h2 className="text-4xl sm:text-5xl font-semibold tracking-tight">
             Experience
           </h2>
-          <p className="text-muted-foreground text-lg max-w-2xl">
-            Professional experience in security operations, full-stack development, 
-            and enterprise system engineering.
-          </p>
         </div>
         
         <div className="space-y-0">
