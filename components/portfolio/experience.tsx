@@ -22,7 +22,7 @@ const experiences: Experience[] = [
       "Communicated findings with clients and delivered clear, client-ready penetration testing reports",
       "Helped standardize client-facing testing methodology documentation in a fast-paced consulting environment",
     ],
-    tools: ["Burp Suite", "Penetration Testing", "OSINT", "Phishing", "Cloud Security", "Reporting"],
+    tools: ["Burp Suite", "Penetration Testing", "OSINT", "Phishing", "Web Application Security", "Consulting", "Kali Linux", "Reporting"],
   },
   {
     company: "Carleton University",
