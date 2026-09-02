@@ -9,6 +9,42 @@ interface SkillCategory {
 
 const skillCategories: SkillCategory[] = [
   {
+    icon: Shield,
+    title: "Security Consulting",
+    skills: [
+      "Security assessments & client advisory",
+      "Risk management & remediation planning",
+      "Governance, Risk & Compliance (GRC)",
+      "Threat modeling & security awareness",
+      "Vulnerability management programs",
+      "Technical reporting & stakeholder communication",
+    ],
+  },
+  {
+    icon: Wrench,
+    title: "Web Application Security",
+    skills: [
+      "Web application security testing",
+      "Burp Suite & OWASP methodology",
+      "Penetration testing & vulnerability validation",
+      "Authentication, authorization & access control",
+      "API security & input validation",
+      "Security findings, evidence & remediation guidance",
+    ],
+  },
+  {
+    icon: Code,
+    title: "Security & Dev Tooling",
+    skills: [
+      "Kali Linux & Linux / CLI workflows",
+      "Tenable Nessus, Qualys",
+      "Microsoft Defender",
+      "Burp Suite, Nmap & Wireshark",
+      "Python, PowerShell & Bash automation",
+      "Jira, Git & technical documentation",
+    ],
+  },
+  {
     icon: Brain,
     title: "Machine Learning & AI",
     skills: [
@@ -17,58 +53,19 @@ const skillCategories: SkillCategory[] = [
       "Natural Language Processing (NLP)",
       "Retrieval-Augmented Generation (RAG)",
       "Model Interpretability (SHAP, Grad-CAM)",
-      "Hyperparameter Optimization (Optuna)",
       "Representation Learning & Embeddings",
-      "Semi-supervised & Unsupervised Learning",
     ],
   },
   {
     icon: BarChart3,
-    title: "Data & Analytics",
-    skills: [
-      "Pandas, NumPy, Matplotlib",
-      "Data Preprocessing & Feature Engineering",
-      "Exploratory Data Analysis (EDA)",
-      "Large-scale dataset handling",
-      "Class imbalance handling & resampling",
-      "Statistical aggregation & optimization",
-    ],
-  },
-  {
-    icon: Shield,
-    title: "Cybersecurity & GRC",
-    skills: [
-      "Vulnerability Management",
-      "Network Security & Intrusion Detection",
-      "Governance, Risk & Compliance (GRC)",
-      "WAF Operations & Traffic Analysis",
-      "DNS / SPF / Email Security",
-      "Threat Modeling & Security Awareness",
-      "Zero-day & anomaly-based detection",
-    ],
-  },
-  {
-    icon: Code,
-    title: "Software Engineering",
+    title: "Data & Software Engineering",
     skills: [
       "Python, JavaScript, SQL",
       "React, Node.js, FastAPI",
-      "REST APIs & Backend Systems",
-      "Automation & Scripting (Python, PowerShell)",
-      "Git, Agile Development",
-      "System Design & Documentation",
-      "Performance Optimization",
-    ],
-  },
-  {
-    icon: Wrench,
-    title: "Security & Dev Tooling",
-    skills: [
-      "Tenable Nessus, Qualys",
-      "Microsoft Defender",
-      "FAISS, LangChain",
-      "Jira, Bitwarden",
-      "Linux / CLI workflows",
+      "REST APIs & backend systems",
+      "Pandas, NumPy & data preprocessing",
+      "System design & performance optimization",
+      "Git, Agile development & documentation",
     ],
   },
 ]
@@ -82,7 +79,7 @@ export function Skills() {
             Skills & Tooling
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl">
-            Technical expertise across machine learning, cybersecurity, and software engineering.
+            Security consulting capabilities grounded in practical testing, clear communication, and actionable remediation.
           </p>
         </div>
         
