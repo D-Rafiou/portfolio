@@ -8,7 +8,7 @@ const _inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export const metadata: Metadata = {
   title: 'Rafiou Diallo | ML & Cybersecurity',
-  description: 'Machine Learning & Cybersecurity Enthusiaste specializing in Applied AI, Security Systems, and Interpretable ML. Building intelligent systems at the intersection of ML and security.',
+  description: 'Rafiou Diallo is a machine learning and cybersecurity professional specializing in offensive security, applied AI, security systems, and interpretable ML.',
   keywords: ['Machine Learning', 'Cybersecurity', 'AI', 'Python', 'PyTorch', 'Security Engineer'],
   authors: [{ name: 'Rafiou Diallo' }],
   openGraph: {
