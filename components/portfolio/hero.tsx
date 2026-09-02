@@ -26,17 +26,16 @@ export function Hero() {
           {/* Title */}
           <div className="space-y-3 animate-in fade-in slide-in-from-bottom-4 duration-700 delay-100">
             <p className="text-2xl sm:text-3xl md:text-4xl font-medium text-primary">
-              Machine Learning & Cybersecurity 
+              Cybersecurity & Machine Learning
             </p>
             <p className="text-base sm:text-lg text-muted-foreground font-mono tracking-wide">
-              Applied AI · CyberSecurity · Interpretable ML
+              Security Consulting · Penetration Testing · Applied ML
             </p>
           </div>
           
           {/* Tagline */}
           <p className="max-w-2xl mx-auto text-muted-foreground text-lg sm:text-xl leading-relaxed text-pretty animate-in fade-in slide-in-from-bottom-4 duration-700 delay-200">
-            I build intelligent systems at the intersection of machine learning, cybersecurity, 
-            and real-world deployment — focusing on robustness, interpretability, and scale.
+            I secure and stress-test real-world systems, blending a background in machine learning and interpretability with hands-on penetration testing, and a strong interest in security consulting.
           </p>
           
           {/* CTA Buttons */}

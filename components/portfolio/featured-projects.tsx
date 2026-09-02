@@ -87,10 +87,6 @@ export function FeaturedProjects() {
           <h2 className="text-4xl sm:text-5xl font-semibold tracking-tight">
             Featured Projects
           </h2>
-          <p className="text-muted-foreground text-lg max-w-2xl">
-            Production-grade ML and security systems built with a focus on interpretability, 
-            robustness, and real-world deployment.
-          </p>
         </div>
         
         <div className="grid gap-8 md:grid-cols-2">

@@ -10,9 +10,6 @@ export function Contact() {
             <h2 className="text-4xl sm:text-5xl font-semibold tracking-tight">
               {"Let's Connect"}
             </h2>
-            <p className="text-muted-foreground text-lg">
-              Open to opportunities in ML, cybersecurity, and applied AI systems.
-            </p>
           </div>
           
           <div className="flex flex-wrap items-center justify-center gap-4">

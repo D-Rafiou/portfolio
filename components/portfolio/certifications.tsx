@@ -36,9 +36,6 @@ export function Certifications() {
           <h2 className="text-4xl sm:text-5xl font-semibold tracking-tight">
             Certifications
           </h2>
-          <p className="text-muted-foreground text-lg max-w-2xl">
-            Credentials supporting a practical foundation in offensive security, risk, and systems.
-          </p>
         </div>
 
         <div className="grid gap-6 md:grid-cols-3">
